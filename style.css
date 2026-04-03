@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Header */
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Search + button */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Product cards container */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 700px;
+}
+
+/* Each card */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Cart section */
+#cart {
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+#cart {
+    list-style: none;
+    padding: 0;
+}
+
+/* Cart item */
+#cart li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.qty-controls button {
+  padding: 5px 10px;
+}
+
+.remove-btn {
+  background: red;
+}
+
+#cart li span{
+    min-width: 30px;
+    text-align: center;
+}
+
+/* Remove button */
+.remove-btn {
+    background: red;
+    padding: 5px 10px;
+    margin-left: 10px;
+    height: 30px;
+}
+
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark .card {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+.dark button {
+    background: #333;
+    color: white;
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:active {
+    transform: scale(0.95);
+}
+
+button:active {
+    transform: scale(0.9);
+}
